@@ -1,3 +1,86 @@
-// Bootstrap
+//Bootstrap
 @import "vendor/bootstrap/scss/bootstrap.scss";
+@import "https://use.typekit.net/mhm4rjn.css";
 
+
+body {
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .875rem;
+  line-height: 1.25;
+  background-image: linear-gradient(180deg,#fff,#f4f7fc,#fdf9f7 60%,#fdf9f7 80%,#f4f7fc);
+  background-repeat: no-repeat;
+}
+
+p {
+  color: #303742;
+}
+
+.message-section {
+  padding: 50px 0;
+}
+
+.message {
+  text-align: center;
+}
+
+.message-container {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.desk-button-container {
+  display: block;
+}
+
+.desk-button {
+  font-weight: 800;
+  display: block;
+  width: 100%;
+  margin-top: .5rem;
+  color: #5a9cff;
+  background-color: #fff;
+  border: 2px solid #5a9cff;
+  padding: .5rem 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-size: .8125rem;
+  line-height: 2.3rem;
+  min-width: 150px;
+  min-height: 50px;
+}
+
+.selected {
+  color: #fff !important;
+  background-color: #5a9cff !important;
+}
+
+@media (min-width: 768px) {
+
+  .desk-button {
+    display: inline-block;
+    width: auto;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .message, .desk-button-container {
+    display: inline;
+  }
+
+  .desk-button {
+    min-width: 138px;
+  }
+
+  .desk-button:nth-of-type(3) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desk-button {
+    min-width: 150px;
+  }
+}
